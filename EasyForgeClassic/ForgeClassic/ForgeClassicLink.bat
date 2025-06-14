@@ -41,7 +41,7 @@ if not exist outputs\txt2img-grids\ ( mkdir outputs\txt2img-grids )
 if not exist outputs\img2img-grids\ ( mkdir outputs\img2img-grids )
 if not exist log\images\ ( mkdir log\images )
 
-call %JUNCTION% ..\OutputReforge outputs
+call %JUNCTION% ..\OutputForge outputs
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-popd rem %~dp0..\..\stable-diffusion-webui-reForge
+popd rem %~dp0..\..\sd-webui-forge-classic
