@@ -4,6 +4,8 @@ set CURL_CMD=C:\Windows\System32\curl.exe -kL
 set EASY_TOOLS=%~dp0..\..\EasyTools
 set GITHUB_CLONE_OR_PULL=%EASY_TOOLS%\Git\GitHub_CloneOrPull.bat
 
+copy .\python_* %EASY_TOOLS%\Python\
+
 pushd %~dp0..\..
 
 @REM echo https://github.com/Haoming02/sd-webui-forge-classic
