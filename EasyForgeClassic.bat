@@ -104,6 +104,9 @@ pause & exit /b 1
 :EASY_GIT_FOUND
 @REM ---- ここまで Git/Git_SetPath.bat と同期 --------
 
+echo EasyForgeClassic.bat > .gitignore
+echo EasyTools/ >> .gitignore
+
 call :INIT_REPO %EASY_TOOLS_DIR% %EASY_TOOLS_URL% %EASY_TOOLS_BRANCH%
 if %ERRORLEVEL% neq 0 ( exit /b 1 )
 
