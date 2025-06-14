@@ -113,6 +113,8 @@ if %ERRORLEVEL% neq 0 ( exit /b 1 )
 call :INIT_REPO %PROJECT_DIR% %PROJECT_URL% %PROJECT_BRANCH%
 if %ERRORLEVEL% neq 0 ( exit /b 1 )
 
+copy EasyForgeClassic\ForgeClassic\python_* EasyTools\Python\
+
 call %PROJECT_SETUP_BAT%
 if %ERRORLEVEL% neq 0 ( exit /b 1 )
 
