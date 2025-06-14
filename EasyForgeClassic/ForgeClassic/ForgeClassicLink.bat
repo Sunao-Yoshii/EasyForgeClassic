@@ -34,6 +34,16 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 if not exist ..\Model\wildcards\play.txt ( copy /Y %~dp0src\play.txt ..\Model\wildcards\ )
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
+rem Default config files
+copy /Y %~dp0src\config.json ..\sd-webui-forge-classic\config.json
+
+rem Copy EasyPromptSelector files
+if not exist ..\Model\EasyPromptSelector\Illustrious_rating.yml ( copy /Y %~dp0src\Illustrious_rating.yml ..\Model\EasyPromptSelector\ )
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+if not exist ..\Model\EasyPromptSelector\Illustrious_settings.yml ( copy /Y %~dp0src\Illustrious_settings.yml ..\Model\EasyPromptSelector\ )
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
+rem Create output directories
 if not exist outputs\txt2img-images\ ( mkdir outputs\txt2img-images )
 if not exist outputs\img2img-images\ ( mkdir outputs\img2img-images )
 if not exist outputs\extras-images\ ( mkdir outputs\extras-images )

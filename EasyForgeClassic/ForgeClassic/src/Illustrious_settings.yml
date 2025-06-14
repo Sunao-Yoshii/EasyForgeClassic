@@ -1,0 +1,3 @@
+﻿軽量: "Steps:40,CFG scale:3,Sampler: Euler a,Seed:-1,Schedule type: Karras,"
+ちょっと複雑化: "Steps:40,CFG scale:3,Sampler: Euler A Comfy,Seed:-1,Schedule type: Karras,"
+明細化: "Steps:50,CFG scale:3,Sampler: DPM++ 2M SDE,Seed:-1,Schedule type: Exponential,"

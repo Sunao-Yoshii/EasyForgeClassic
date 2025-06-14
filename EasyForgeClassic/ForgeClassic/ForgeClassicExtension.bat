@@ -54,5 +54,13 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %GITHUB_CLONE_OR_PULL% blue-pen5805 sdweb-easy-prompt-selector main 053045eb6f1f240e557fd7271714e8718751f84f
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+@REM https://github.com/zanllp/sd-webui-infinite-image-browsing
+call %GITHUB_CLONE_OR_PULL% zanllp sd-webui-infinite-image-browsing main 22d51a4e6f7dd9ff07a4055915be7330a9550e0d
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
+@REM https://github.com/DominikDoom/a1111-sd-webui-tagcomplete
+call %GITHUB_CLONE_OR_PULL% DominikDoom a1111-sd-webui-tagcomplete main 8766965a305b09aee4aa65aa754f84feaf801437
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
 popd rem %~dp0..\..\sd-webui-forge-classic\extensions
 exit /b 0
