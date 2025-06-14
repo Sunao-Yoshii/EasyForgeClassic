@@ -26,7 +26,7 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %JUNCTION% extensions\stable-diffusion-webui-wildcards\wildcards ..\Model\wildcards 
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-call %JUNCTION% extensions\sdweb-easy-prompt-selector\tags ..\Model\EasyPromptSelector 
+call %JUNCTION% ..\Model\EasyPromptSelector extensions\sdweb-easy-prompt-selector\tags  
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 if not exist ..\Model\wildcards\1girl.txt ( copy /Y %~dp0src\1girl.txt ..\Model\wildcards\ )
