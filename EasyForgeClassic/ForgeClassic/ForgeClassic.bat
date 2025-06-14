@@ -13,6 +13,8 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 popd
 pushd %~dp0..\..\sd-webui-forge-classic
 
+set EASY_PYTHON_VERSION=3.11.9
+
 call %EASY_TOOLS%\Python\Python_Activate.bat
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
