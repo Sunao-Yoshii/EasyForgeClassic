@@ -2,6 +2,4 @@ name,prompt,negative_prompt
 👤Char 📋,"__noob_1girl__ #__Booru1girl__, __NsfwPony/char__",
 TIPO 1girl play 📋,"<lora:NoobV065sHyperDmd:1>1girl, __1girl__, __play__, solo, very awa, masterpiece, best quality, newest, highres, absurdres, explicit",
 TIPO 1girl play [Sample] 📋,"<lora:NoobV065sHyperDmd:1>1girl, __tipo_1girl__, __tipo_play__, solo, very awa, masterpiece, best quality, newest, highres, absurdres, explicit",
-🎨StyleE 📋,__MixedStyle__ # <lora:NoobEStylesCollection:1> __NoobStylesCollection__ # <lora:NoobEStylesDump:1> __NoobEStylesDump__,
-🎨StyleV 📋,__MixedStyle__ # <lora:NoobVStylesCollection:1> __NoobStylesCollection__ # <lora:NoobVStylesDump:1> __NoobVStylesDump__,
 copycat-illustrious_v7.0,"masterpiece,best_quality","worst_quality, bad_quality"

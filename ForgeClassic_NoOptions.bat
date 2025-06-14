@@ -19,6 +19,16 @@ if not exist styles.csv (
 	copy %~dp0EasyForgeClassic\ForgeClassic\src\styles.csv styles.csv
 )
 
+if not exist config.json (
+	echo copy %~dp0EasyForgeClassic\ForgeClassic\src\config.json config.json
+	copy %~dp0EasyForgeClassic\ForgeClassic\src\config.json config.json
+)
+
+if not exist ui-config.json (
+	echo copy %~dp0EasyForgeClassic\ForgeClassic\src\ui-config.json ui-config.json
+	copy %~dp0EasyForgeClassic\ForgeClassic\src\ui-config.json ui-config.json
+)
+
 set PYTHON=%~dp0sd-webui-forge-classic\venv\Scripts\python.exe
 set VENV_DIR=%~dp0sd-webui-forge-classic\venv
 
