@@ -6,7 +6,7 @@ set "PROJECT_SETUP_BAT=%~dp0%PROJECT_NAME%\Setup.bat"
 set "PROJECT_MODEL_DOWNLOAD_BAT=%~dp0Download\Illustorious_minimum.bat"
 
 set PROJECT_URL=https://github.com/Sunao-Yoshii/%PROJECT_NAME%
-set PROJECT_BRANCH=main
+set PROJECT_BRANCH=develop
 set "PROJECT_DIR=%~dp0."
 
 set "EASY_TOOLS_DIR=%~dp0EasyTools"
