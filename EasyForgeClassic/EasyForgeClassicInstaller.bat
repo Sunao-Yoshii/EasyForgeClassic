@@ -3,7 +3,7 @@ chcp 65001 > NUL
 
 set "PROJECT_NAME=EasyForgeClassic"
 set "PROJECT_SETUP_BAT=%~dp0%PROJECT_NAME%\Setup.bat"
-set "PROJECT_MODEL_DOWNLOAD_BAT=%~dp0Download\Illustorious_minimum.bat"
+set "PROJECT_MODEL_DOWNLOAD_BAT=%~dp0Download\illustrious_minimum.bat"
 
 set PROJECT_URL=https://github.com/Sunao-Yoshii/%PROJECT_NAME%
 set PROJECT_BRANCH=main
@@ -42,16 +42,16 @@ if not exist %CURL_EXE% (
 )
 set CURL_CMD=C:\Windows\System32\curl.exe -kL
 
-if exist %~dp0stable-diffusion-webui\ (
-	echo "%~dp0stable-diffusion-webui がすでに存在します。別のフォルダにインストールしてください。"
+if exist %~dp0sd-webui-forge-classic\ (
+	echo "%~dp0sd-webui-forge-classic がすでに存在します。別のフォルダにインストールしてください。"
 	pause & exit /b 1
 )
-if exist %~dp0stable-diffusion-webui-forge\ (
-	echo "%~dp0stable-diffusion-webui-forge がすでに存在します。別のフォルダにインストールしてください。"
+if exist %~dp0sd-webui-forge-classic-forge\ (
+	echo "%~dp0sd-webui-forge-classic-forge がすでに存在します。別のフォルダにインストールしてください。"
 	pause & exit /b 1
 )
-if exist %~dp0stable-diffusion-webui-reForge\ (
-	echo "%~dp0stable-diffusion-webui-reForge がすでに存在します。別のフォルダにインストールしてください。"
+if exist %~dp0sd-webui-forge-classic-reForge\ (
+	echo "%~dp0sd-webui-forge-classic-reForge がすでに存在します。別のフォルダにインストールしてください。"
 	pause & exit /b 1
 )
 
