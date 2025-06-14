@@ -22,6 +22,9 @@ call %~dp0..\ControlNet\Pony\AnyTest_PonyDim256_v40.bat
 call %~dp0..\ControlNet\NoobE\NoobE_Tile.bat
 call %~dp0..\ControlNet\NoobE\NoobE_Inpaint.bat
 
+call %~dp0..\VAE\Sdxl\sdxl_vae.bat
+call %~dp0..\VAE\Sdxl\songVae_v10.bat
+
 call %~dp0..\wildcards\noob_1girl.bat
 call %~dp0..\wildcards\tipo_1girl.bat
 call %~dp0..\wildcards\tipo_play.bat

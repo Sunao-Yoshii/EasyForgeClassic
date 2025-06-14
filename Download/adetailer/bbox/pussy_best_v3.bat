@@ -1,5 +1,7 @@
 @echo off
 chcp 65001 > NUL
+
+call %~dp0..\..\..\CivitaiKey.bat
 set EASY_TOOLS=%~dp0..\..\..\EasyTools
 set CIVITAI_MODEL_UNZIP=%EASY_TOOLS%\Download\CivitaiModelUnzip.bat
 pushd %~dp0..\..\..\Model\adetailer

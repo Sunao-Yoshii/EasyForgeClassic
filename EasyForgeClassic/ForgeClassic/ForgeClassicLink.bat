@@ -36,6 +36,7 @@ if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
 rem Default config files
 copy /Y %~dp0src\config.json ..\sd-webui-forge-classic\config.json
+copy /Y %~dp0src\ui-config.json ..\sd-webui-forge-classic\ui-config.json
 
 rem Copy EasyPromptSelector files
 if not exist ..\Model\EasyPromptSelector\Illustrious_rating.yml ( copy /Y %~dp0src\Illustrious_rating.yml ..\Model\EasyPromptSelector\ )
