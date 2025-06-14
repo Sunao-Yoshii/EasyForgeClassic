@@ -5,3 +5,4 @@ chcp 65001 > NUL
 call %~dp0..\All\adetailer.bat
 call %~dp0..\All\VAE_Sdxl.bat
 call %~dp0..\All\wildcards.bat
+call %~dp0..\All\Lora_Bundles.bat
