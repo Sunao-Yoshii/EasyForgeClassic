@@ -26,10 +26,6 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %GITHUB_CLONE_OR_PULL% xhoxye sd-webui-ar_xhox main 4c11b19e198078148e7d683987e8fc2462bbe460
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-@REM https://github.com/KohakuBlueleaf/z-tipo-extension
-call %GITHUB_CLONE_OR_PULL% KohakuBlueleaf z-tipo-extension main 32d61cf213f6346b05e69fc57fe830ecd9fbfca8
-if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
-
 @REM https://github.com/L4Ph/stable-diffusion-webui-localization-ja_JP
 call %GITHUB_CLONE_OR_PULL% L4Ph stable-diffusion-webui-localization-ja_JP main d639f8ca6d635686806bebfc8fb6efbe9a71e636
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )

@@ -14,6 +14,9 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %JUNCTION% models\ESRGAN ..\Model\ESRGAN
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+call %JUNCTION% models\Embedding ..\Model\embeddings
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
 call %JUNCTION% models\Lora ..\Model\Lora
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
