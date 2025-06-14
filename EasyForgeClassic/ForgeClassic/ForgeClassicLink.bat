@@ -23,7 +23,7 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %JUNCTION% models\VAE ..\Model\VAE
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
-call %JUNCTION% extensions\sd-dynamic-prompts\wildcards ..\Model\wildcards 
+call %JUNCTION% extensions\stable-diffusion-webui-wildcards ..\Model\wildcards 
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 if not exist ..\Model\wildcards\1girl.txt ( copy /Y %~dp0src\1girl.txt ..\Model\wildcards\ )
