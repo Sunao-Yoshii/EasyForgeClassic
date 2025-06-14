@@ -39,7 +39,7 @@ call %GITHUB_CLONE_OR_PULL% light-and-ray sd-webui-lama-cleaner-masked-content m
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/adieyal/sd-dynamic-prompts
-call %GITHUB_CLONE_OR_PULL% adieyal sd-dynamic-prompts master de056ff8d80e4ad120e13a90cf200f3383f427c6
+call %GITHUB_CLONE_OR_PULL% adieyal sd-dynamic-prompts main de056ff8d80e4ad120e13a90cf200f3383f427c6
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
 @REM https://github.com/AUTOMATIC1111/stable-diffusion-webui-wildcards
