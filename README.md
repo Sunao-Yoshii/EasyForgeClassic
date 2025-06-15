@@ -42,8 +42,8 @@ Illustrious を中心にしています。
 
 ### 追加データのダウンロード
 
-- ローカルの `CivitaiKey.bat` ファイルをメモ帳で開いて、`your_civitai_key_here` の部分を書き換えます。  
-	- [Wiki](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper/wiki/Civitai-API-Key) のリンク先をブラウザで翻訳して、内容にそって API Key を取得して、この設定項目を書き換えて保存します(なんせ、2025-06-15 時点では、Civitai-Helper なんて便利機能動かねーんですもの)。
+- `Settings` の左上 `Search...` 欄に `api` と入力すると `[Wiki] API key for authenticating with Civitai.` の設定が表示されます。  
+	- [Wiki](https://github.com/zixaphir/Stable-Diffusion-Webui-Civitai-Helper/wiki/Civitai-API-Key) のリンク先をブラウザで翻訳して、内容にそって API Key を取得して、この設定欄にコピペしてから上の `Apply settings` で保存します。
 - Civitai キーを設定したら `Download/illustrious_standard.bat` でモデルなどを一式ダウンロードします。
 - 追加データをダウンロードするとキャラやスタイルのワイルドカードが使えます。
 	- `__NsfwPony/char__`: キャラワイルドカード
@@ -74,6 +74,17 @@ EasyTools にどっぷり依存しています。
 
 https://github.com/Zuntan03/EasyTools
 Copyright (c) 2024 Zuntan All Rights Reserved.
+
+## 更新履歴
+
+### 2025/06/15
+
+- 標準の CivitaiHelper の代わりに kai-rin 氏の fork 版を採用しました。
+    これに伴い、追加データダウンロードの手順が変更になっています。
+    既存のユーザは `git checkout -- CivitaiKey.bat` してから `git pull origin master` で対処できると思います。
+    - https://github.com/kai-rin/Stable-Diffusion-Webui-Civitai-Helper
+- 若干の速度アップ版起動コマンド `ForgeClassic_withXformers.bat` を追加しました。
+- GPU メモリが少ないとクラッシュする高速版 `ForgeClassic_withCudaParams.bat` も追加しました。
 
 ## ライセンス
 

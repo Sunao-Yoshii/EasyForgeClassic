@@ -58,5 +58,9 @@ if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 call %GITHUB_CLONE_OR_PULL% DominikDoom a1111-sd-webui-tagcomplete main 8766965a305b09aee4aa65aa754f84feaf801437
 if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
 
+@REM https://github.com/kai-rin/Stable-Diffusion-Webui-Civitai-Helper
+call %GITHUB_CLONE_OR_PULL% kai-rin Stable-Diffusion-Webui-Civitai-Helper master ba10f0f8188a52efae7ebf3a58d2f8ff58959d00
+if %ERRORLEVEL% neq 0 ( popd & exit /b 1 )
+
 popd rem %~dp0..\..\sd-webui-forge-classic\extensions
 exit /b 0
