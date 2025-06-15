@@ -24,4 +24,8 @@ echo python -m pip install -qq -U pip setuptools wheel
 python -m pip install -qq -U pip setuptools wheel
 if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
 
+echo python -m pip install triton-windows
+python -m pip install triton-windows
+if %ERRORLEVEL% neq 0 ( pause & popd & exit /b 1 )
+
 popd
