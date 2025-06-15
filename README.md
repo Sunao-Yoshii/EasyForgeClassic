@@ -82,6 +82,7 @@ Copyright (c) 2024 Zuntan All Rights Reserved.
 - 標準の CivitaiHelper の代わりに kai-rin 氏の fork 版を採用しました。
     これに伴い、追加データダウンロードの手順が変更になっています。
     既存のユーザはインストールディレクトリ内を右クリック→ターミナルで開くから、 `git checkout -- CivitaiKey.bat` してから `git pull origin main` で対処できると思います。
+    ※ アップデート後は `EasyForgeClassic\ForgeClassic\ForgeClassicExtension.bat` で入りますが、多分下記の URL を拡張機能タブの「URLからインストール」した方が無難だし楽。
     - https://github.com/kai-rin/Stable-Diffusion-Webui-Civitai-Helper
 - 若干の速度アップ版起動コマンド `ForgeClassic_withXformers.bat` を追加しました。
 - GPU メモリが少ないとクラッシュする高速版 `ForgeClassic_withCudaParams.bat` も追加しました。
